@@ -3,7 +3,7 @@ from google.adk.agents.llm_agent import Agent
 from src.const import SMART_MODEL_USED
 from src.tools.greeting_tools import say_hello
 
-greeting_agent = root_agent = Agent(
+greeting_agent  = Agent(
     model=SMART_MODEL_USED,
     name='greeting_agent',
     description=
