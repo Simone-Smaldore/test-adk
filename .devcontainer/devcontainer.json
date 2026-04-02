@@ -1,0 +1,10 @@
+{
+    "name": "test-adk",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "app",
+    "workspaceFolder": "/workspaces",
+    "forwardPorts": [
+        5432,
+        3000
+    ]
+}
