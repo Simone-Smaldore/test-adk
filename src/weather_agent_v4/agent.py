@@ -2,7 +2,7 @@ from google.adk.agents.llm_agent import Agent
 
 from src.callback_guardrails.callback_tool import block_paris_tool_guardrail
 from src.farewell_agent.agent import farewell_agent
-from src.greeting_agent.greeting_agent import greeting_agent
+from src.greeting_agent.agent import greeting_agent
 from src.callback_guardrails.callback_model import block_keyword_guardrail
 from src.const import SMART_MODEL_USED
 from src.tools.weather_tools import get_weather_stateful

@@ -2,7 +2,7 @@ from google.adk.agents.llm_agent import Agent
 
 from src.const import SMART_MODEL_USED
 from src.farewell_agent.agent import farewell_agent
-from src.greeting_agent.greeting_agent import greeting_agent
+from src.greeting_agent.agent import greeting_agent
 from src.tools.weather_tools import get_weather
 
 root_agent = weather_agent_v2 = Agent(

@@ -1,0 +1,78 @@
+{
+  "eval_set_id": "evalset_test_greeting",
+  "name": "evalset_test_greeting",
+  "eval_cases": [
+    {
+      "eval_id": "case_base",
+      "conversation": [
+        {
+          "invocation_id": "e-bc5ba6d3-8c29-49b8-92c8-0e364ec23c2c",
+          "user_content": {
+            "parts": [
+              {
+                "text": "Ciao"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "Hello there!"
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {
+            "invocation_events": [
+              {
+                "author": "greeting_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "text": "The user said \"Ciao\", which is a greeting.\nThe system prompt instructs me to use the `say_hello` tool to provide a friendly greeting.\nSince no name was provided in the input, I should call `say_hello` without a name.",
+                      "thought": true
+                    },
+                    {
+                      "function_call": {
+                        "id": "24c1vve4",
+                        "args": {},
+                        "name": "say_hello"
+                      },
+                      "thought_signature": "EiYKJGUyNDgzMGE3LTVjZDYtNDJmZS05OThiLWVlNTM5ZTcyYjljMw=="
+                    }
+                  ],
+                  "role": "model"
+                }
+              },
+              {
+                "author": "greeting_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_response": {
+                        "id": "24c1vve4",
+                        "name": "say_hello",
+                        "response": {
+                          "result": "Hello there!"
+                        }
+                      }
+                    }
+                  ],
+                  "role": "user"
+                }
+              }
+            ]
+          },
+          "creation_timestamp": 1775572671.988971
+        }
+      ],
+      "session_input": {
+        "app_name": "greeting_agent",
+        "user_id": "user"
+      },
+      "creation_timestamp": 1775572896.3733654
+    }
+  ],
+  "creation_timestamp": 1775572886.0674527
+}
